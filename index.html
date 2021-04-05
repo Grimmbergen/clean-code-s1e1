@@ -17,51 +17,45 @@
     </header>
     <main class="main">
       <section class="add-section">
-        <p id="add-section__item">
           <label class="add-section__label" for="new-task">Add Item</label>
-          <div class="new-task-wrapper">
-            <input id="new-task"class="task new" type="text">
-            <button class="butt add-butt">Add</button>
-          </div>
-        </p>
+          <article class="new-task-wrapper">
+            <input id="new-task"class="input_text task" type="text">
+            <button class="butt butt-add">Add</button>
+          </article>
       </section>
-      <section class="todo-section">
-        <h3 class="todo-section__head">Todo</h3>
-        <ul id="todo-list">
-          <li class="todo-list__item">
-            <input class="checkbox" type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input class="text" type="text">
-            <button class="butt-edit butt">Edit</button>
-            <button class="butt-del butt">
-              <img class="butt-del__img" src="./remove.svg" alt="Remove">
-            </button>
-          </li>
-          <li class="todo-list__item edit-mode">
-            <input class="checkbox" type="checkbox">
-            <label class="task edit-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task text text-edit">
-            <button class="butt-edit butt">Save</button>
-            <button class="butt-del butt">
-              <img class="butt-del__img" src="./remove.svg" alt="Remove">
-            </button>
-          </li>
+      <h3 class="todo-section__head">Todo</h3>
+      <ul id="todo-list" class="todo-list">
+        <li class="todo-list__item">
+          <input class="checkbox" type="checkbox">
+          <label class="label task">Pay Bills</label>
+          <input class="input_text task" type="text">
+          <button class="butt-edit butt">Edit</button>
+          <button class="butt-del butt">
+            <img class="butt-del__img" src="./remove.svg" alt="Remove">
+          </button>
+        </li>
+        <li class="todo-list__item edit-mode">
+          <input class="checkbox" type="checkbox">
+          <label class="label task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task input_text text-edit">
+          <button class="butt-edit butt">Save</button>
+          <button class="butt-del butt">
+            <img class="butt-del__img" src="./remove.svg" alt="Remove">
+          </button>
+        </li>
         </ul>
-      </section>
-      <section>
-        <h3 class="todo-section__head">Completed</h3>
-        <ul id="compl-list">
-          <li class="todo-list__item">
-            <input class="checkbox" type="checkbox" checked>
-            <label class="task compl-label">See the Doctor</label>
-            <input type="text" class="task text">
-            <button class="butt-edit butt">Edit</button>
-            <button class="butt-del butt">
-              <img class="butt-del__img" src="./remove.svg" alt="Remove">
-            </button>
-          </li>
-        </ul>
-      </section>
+      <h3 class="todo-section__head">Completed</h3>
+      <ul id="compl-list" class="compl-list">
+        <li class="compl-list__item">
+          <input class="checkbox" type="checkbox" checked>
+          <label class="label task">See the Doctor</label>
+          <input type="text" class="task input_text">
+          <button class="butt-edit butt">Edit</button>
+          <button class="butt-del butt">
+            <img class="butt-del__img" src="./remove.svg" alt="Remove">
+          </button>
+        </li>
+      </ul>
     </main>
     <script src="app.js"></script>
   </body>
