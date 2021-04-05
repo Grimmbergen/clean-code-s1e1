@@ -45,17 +45,20 @@
     display: flex;
 }
 
-ul {
+.todo-list,
+.compl-list {
     margin:0;
     padding: 0px;
 }
 
-li, h3 {
+.todo-list__item, 
+.compl-list__item,
+.todo-section__head {
     list-style: none;
 }
 
-input,
-button{
+.input,
+.butt{
     outline: none;
 }
 
@@ -67,6 +70,7 @@ button{
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+    border: none;
 }
 
 .butt:hover {
@@ -129,7 +133,7 @@ button{
     align-items: center;
 }
 
-.todo-list__item > * 
+.todo-list__item > *, 
 .compl-list__item > * {
     vertical-align: middle;
 }
